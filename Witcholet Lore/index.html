@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Witcholet | Universo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="Witcholet  Logo Dorado.png" alt="Team Witcholet Logo" class="main-logo-img">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="Workinprogress.html">CONTACTO</a></li>
+                        <li class="has-submenu">
+                        <a href="#">JUEGOS <span>❯</span></a>
+                        <ul class="submenu-inner">
+                            <li><a href="index.html">Witcholet</a></li>
+                            <li><a href="Workinprogress.html">The princess and the witch</a></li>
+                            <li><a href="Workinprogress.html">God save the king</a></li>
+                            <li><a href="Workinprogress.html">All you can eat</a></li>
+                            <li><a href="Workinprogress.html">Escape of the dead room</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">REDES SOCIALES <span>❯</span></a>
+                        <ul class="submenu-inner">
+                            <li><a href="https://www.instagram.com/witcholet_/">INSTAGRAM</a></li>
+                            <li><a href="https://x.com/taki_towa">X (TWITTER)</a></li>
+                            <li><a href="https://www.tiktok.com/@witcholet.project">TIKTOK</a></li>
+                            <li><a href="https://www.youtube.com/@TakiTowa">YOUTUBE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="Workinprogress.html">PERSONAJES</a></li>
+                <li><a href="Workinprogress.html">ZONAS</a></li>
+                <li><a href="Workinprogress.html">COMICS</a></li>
+                <li><a href="Workinprogress.html">UNIVERSOS ALTERNOS</a></li>
+                <li><a href="Workinprogress.html">MAPA</a></li>
+                <li><a href="Workinprogress.html">EXPLORAR</a></li>
+                <li><a href="Workinprogress.html">🔍 BUSCAR</a></li>
+                <li><a href="Workinprogress.html">INICIAR SESIÓN</a></li>
+                <li><button class="btn-play" onclick="location.href='Workinprogress.html'">JUGAR AHORA</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        <div class="carousel-container">
+            <div class="carousel-side side-left">
+                <img id="side-l-img" src="" alt="Anterior">
+                <div class="side-text" id="side-l-text">TEXTO</div>
+            </div>
+            <div class="carousel-main">
+                <div class="main-image-wrapper">
+                    <img id="main-img" src="" alt="Actual">
+                    <a href="#" id="char-link" style="text-decoration: none; color: inherit;">
+                        <div class="info-card">
+                            <p id="char-subtitle" class="subtitle"></p>
+                            <h1 id="char-name" class="character-name"></h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-arrow left" onclick="changeSlide(-1)">〈</div>
+                <div class="nav-arrow right" onclick="changeSlide(1)">〉</div>
+            </div>
+            <div class="carousel-side side-right">
+                <img id="side-r-img" src="" alt="Siguiente">
+                <div class="side-text" id="side-r-text">TEXTO</div>
+            </div>
+        </div>
+    </main>
+
+    <section class="latest-section">
+        <div class="section-divider">
+            <span class="divider-line"></span>
+            <div class="divider-center">
+                <span class="divider-icon"></span>
+                <h2>MÁS RECIENTE</h2>
+            </div>
+            <span class="divider-line"></span>
+        </div>
+
+        <div id="latest-grid" class="latest-grid">
+            </div>
+    </section>
+
+    <section class="latest-section">
+        <div class="section-divider">
+            <span class="divider-line"></span>
+            <div class="divider-center">
+                <span class="divider-icon"></span>
+                <h2>PERSONAJES DESTACADOS</h2>
+            </div>
+            <span class="divider-line"></span>
+        </div>
+
+        <div id="latest-grid" class="latest-grid">
+            </div>
+    </section>
+
+    <section class="latest-section">
+        <div class="section-divider">
+            <span class="divider-line"></span>
+            <div class="divider-center">
+                <span class="divider-icon"></span>
+                <h2>ZONAS DESTACADAS</h2>
+            </div>
+            <span class="divider-line"></span>
+        </div>
+
+        <div id="latest-grid" class="latest-grid">
+            </div>
+    </section>
+    <section class="latest-section">
+        <div class="section-divider">
+            <span class="divider-line"></span>
+            <div class="divider-center">
+                <span class="divider-icon"></span>
+                <h2>HISTORIAS DESTACADAS</h2>
+            </div>
+            <span class="divider-line"></span>
+        </div>
+
+        <div id="latest-grid" class="latest-grid">
+            </div>
+    </section>
+    <footer class="footer-label">
+        <span>© 2026 TEAM WITCHOLET</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

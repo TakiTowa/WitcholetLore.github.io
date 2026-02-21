@@ -1,9 +1,9 @@
 const slides = [
-    { img: "Silk.jpg", name: "UNIVERSO", sub: "LA EMPERATRIZ DE SEDA", url: "Workinprogress.html"},
-    { img: "Background.png", name: "CUEVAS", sub: "PROFUNDIDADES OSCURAS", url: "Workinprogress.html" },
-    { img: "Silk.jpg", name: "COLISEO", sub: "ARENA SUBTERRÁNEA", url: "Workinprogress.html" },
-    { img: "Background.png", name: "CASTILLO", sub: "EL TRONO DE SEDA", url: "Workinprogress.html" },
-    { img: "PIXEL.png", name: "ORIGINAL", sub: "PRIMER JUEGO DE WITCHOLET", url: "Workinprogress.html" }
+    {img: "PIXEL.png", name: "ORIGINAL", sub: "PRIMER JUEGO DE WITCHOLET", url: "WitcholetOGDescarga.html"},
+    { img: "Silk.jpg", name: "UNIVERSO ALTERNO", sub: "LA EMPERATRIZ DE SEDA", url: "Workinprogress.html"},
+    { img: "Background.png", name: "CUEVAS", sub: "CUSTODIADAS POR LOS DUENDES", url: "Workinprogress.html" },
+    { img: "Silk.jpg", name: "PALENQUE", sub: "CAOS EN EL ENCIERRO", url: "Workinprogress.html" },
+    { img: "Background.png", name: "CIUDAD PALACIO", sub: "UN REINO PARA TODOS", url: "Workinprogress.html" }
 ];
 
 let currentIdx = 0;

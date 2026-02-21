@@ -75,11 +75,6 @@ body {
 }
 
 
-.latest-card {
-    cursor: pointer; /* Indica que es un enlace */
-    transition: transform 0.3s ease, border-color 0.3s ease;
-    border: 1px solid #333;
-}
 
 .latest-card:hover {
     transform: translateY(-5px);
@@ -181,7 +176,7 @@ body {
     z-index: 100;
 }
 
-.navbar { display: flex; justify-content: space-around; align-items: center; }
+.navbar { display: flex; justify-content: space-between; align-items: center; }
 .logo-container { position: relative; padding: 0px 0; }
 .logo { font-family: 'Cinzel', serif; color: var(--gold); letter-spacing: 2px; cursor: pointer; font-weight: bold; }
 
@@ -197,15 +192,43 @@ body {
     padding: 10px 0;
     z-index: 1000;
 }
+
+.wip-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .logo-container:hover .dropdown-menu { display: block; }
 .dropdown-menu li a { display: block; padding: 10px 20px; color: var(--text-white); text-decoration: none; font-size: 11px; }
 .dropdown-menu li a:hover { color: var(--gold); background: rgba(200, 170, 110, 0.1); }
 
-.nav-links { display: flex; list-style: none; gap: 10px; }
+.nav-links { display:contents ; list-style: none; gap: 10px; }
 .nav-links a { text-decoration: none; color: var(--text-white); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; }
 .nav-links a:hover { color: var(--gold); }
 
-.btn-play { background: #006680; color: white; border:none; padding: 8px 20px; font-weight: bold; cursor: pointer; border-radius: 15px; }
+.btn-download-instant {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--gold); /* Usamos tu variable de color oro */
+    color: #000;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Forma de trapecio estilo Riot */
+}
+
+.btn-download-instant:hover {
+    background: #fff;
+    box-shadow: 0 0 15px var(--gold);
+    transform: translateY(-2px);
+}
 
 /*CARRUSEL*/
 .hero-section { padding-top: 120px; height: 90vh; display: flex; flex-direction: column; align-items: center; justify-content: center; }

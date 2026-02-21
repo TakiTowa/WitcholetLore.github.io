@@ -1,0 +1,113 @@
+/* Contenedor del Juego Original */
+.WitcholetOG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0; /* Espaciado para centrarlo mejor */
+}
+
+/* Imagen con Borde Dorado Estilo Riot */
+.OGBanner {
+    border: 1px solid var(--gold-dark); /* Borde base */
+    box-shadow: 0 0 20px rgba(200, 170, 110, 0.3); /* Resplandor dorado */
+    max-width: 70%; /* Ajuste de tamaño para que no sature la pantalla */
+    height: auto;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.OGBanner:hover {
+    border-color: var(--gold); /* Brilla al pasar el cursor */
+    transform: scale(1.03); /* Ligero acercamiento */
+    box-shadow: 0 0 30px rgba(200, 170, 110, 0.6);
+}
+
+.download-btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--gold); 
+    color: #000;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    width: auto ;
+    height:300px ;
+    font-size: 30px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    clip-path: polygon(52% 25%, 64% 36%, 89% 9%, 76% 50%, 60% 80%, 49% 68%, 38% 81%, 22% 48%, 10% 9%, 35% 36%);
+    
+}
+.BtnBox {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.skull-button {
+    display: flex;
+    flex-direction: column; /* Alinea uno arriba del otro */
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+/* El Cráneo (Arriba) */
+.skull-top {
+    width: 200px;
+    height: 150px;
+    background: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ajusta este clip-path para la forma de tu cráneo */
+    clip-path: polygon(49% 21%, 60% 31%, 89% 8%, 65% 76%, 73% 95%, 46% 81%, 19% 94%, 30% 76%, 7% 10%, 35% 30%);
+    z-index: 2;
+}
+
+.download-text {
+    color: #000;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* La Mandíbula (Abajo) */
+.skull-jaw {
+    width: 140px; /* Un poco más estrecha que el cráneo */
+    height:100px;
+    background: var(--gold-dark);
+    margin-top: -70px; /* IMPORTANTE: Empuja la mandíbula hacia arriba para unirla */
+    /* Tu clip-path de mandíbula original aquí */
+    clip-path: polygon(49% 80%, 57% 63%, 64% 81%, 85% 60%, 65% 100%, 47% 100%, 31% 100%, 11% 61%, 31% 81%, 41% 63%);
+    transition: background 0.3s ease;
+}
+
+/* Efecto de interacción conjunto */
+.skull-button:hover {
+    transform: translateY(-10px) scale(1.05); /* El botón entero salta */
+}
+
+.skull-button:hover .skull-top {
+    background: #ad0101; /* El cráneo brilla */
+}
+
+.skull-button:hover .skull-jaw {
+    background: #610202; /* La mandíbula resalta */
+}
+
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .OGBanner {
+        max-width: 90%; /* Más ancha en pantallas pequeñas */
+        border-width: 1px;
+    }
+    
+    .nav-links {
+        gap: 15px; /* Ajusta el menú para que quepa el botón */
+    }
+}
+

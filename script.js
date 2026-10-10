@@ -1,10 +1,31 @@
 const slides = [
     {img: "PIXEL.png", name: "ORIGINAL", sub: "PRIMER JUEGO DE WITCHOLET", url: "WitcholetOGDescarga.html"},
-    { img: "Silk.jpg", name: "UNIVERSO ALTERNO", sub: "LA EMPERATRIZ DE SEDA", url: "Workinprogress.html"},
-    { img: "Background.png", name: "CUEVAS", sub: "CUSTODIADAS POR LOS DUENDES", url: "Workinprogress.html" },
-    { img: "Silk.jpg", name: "PALENQUE", sub: "CAOS EN EL ENCIERRO", url: "Workinprogress.html" },
-    { img: "Background.png", name: "CIUDAD PALACIO", sub: "UN REINO PARA TODOS", url: "Workinprogress.html" }
+    { img: "Imagenes/CassandraSplashArt.jpeg", name: "Cassandra Quigley", sub: "La Bruja de las Arañas", url: "Workinprogress.html"},
+    { img: "Imagenes/AileenSplashArt.jpg", name: "Aileen Graham", sub: "La Reina de Assilim", url: "Workinprogress.html" },
+    { img: "Imagenes/IvettaSplashArt.jpeg", name: "Ivetta Sawyer", sub: "La Que Posee Demonios", url: "Workinprogress.html" },
+    { img: "Imagenes/KristineSplashArt2.jpg", name: "Kristine Shipton", sub: "La Witcholet", url: "Workinprogress.html" },
+    { img: "Imagenes/ElizabethSplashArt.jpg", name: "Elizabeth ", sub: "La Brujita", url: "Workinprogress.html" }
 ];
+
+const slidesRecomended = [
+    { img: "Imagenes/CassandraSplashArt.jpeg", name: "Cassandra Quigley", sub: "La Bruja de las Arañas", url: "Workinprogress.html"},
+    { img: "Imagenes/AileenSplashArt.jpg", name: "Aileen Graham", sub: "La Reina de Assilim", url: "Workinprogress.html" },
+    { img: "Imagenes/IvettaSplashArt.jpeg", name: "Ivetta Sawyer", sub: "La Que Posee Demonios", url: "Workinprogress.html" },
+    { img: "Imagenes/KristineSplashArt2.jpg", name: "Kristine Shipton", sub: "La Witcholet", url: "Workinprogress.html" },
+    { img: "Imagenes/ElizabethSplashArt.jpg", name: "Elizabeth ", sub: "La Brujita", url: "Workinprogress.html" }
+];
+
+/*
+const AllSlides = [
+    {img: "PIXEL.png", name: "ORIGINAL", sub: "PRIMER JUEGO DE WITCHOLET", url: "WitcholetOGDescarga.html"},
+    { img: "Imagenes/CassandraSplashArt.jpeg", name: "Cassandra Quigley", sub: "La Bruja de las Arañas", url: "Workinprogress.html"},
+    { img: "Imagenes/AileenSplashArt.jpg", name: "Aileen Graham", sub: "La Reina de Assilim", url: "Workinprogress.html" },
+    { img: "Imagenes/IvettaSplashArt.jpeg", name: "Ivetta Sawyer", sub: "La Que Posee Demonios", url: "Workinprogress.html" },
+    { img: "Imagenes/KristineSplashArt2.jpg", name: "Kristine Shipton", sub: "La Witcholet", url: "Workinprogress.html" },
+    { img: "Imagenes/ElizabethSplashArt.jpg", name: "Elizabeth ", sub: "La Brujita", url: "Workinprogress.html" }
+];
+*/
+
 
 let currentIdx = 0;
 
@@ -66,8 +87,28 @@ function renderLatestArticles() {
             </div>
         </div>
     `).join('');
+    
 }
 
+function renderRecomendedArticles() {
+    const grid = document.getElementById('Recomended-grid');
+    if (!grid) return;
+
+    // Tomamos los 5 artículos recomendados del arreglo 'slides'
+    // .slice(0, 5) asegura que siempre se muestren solo los últimos cinco
+    const RecomendedItems = slidesRecomended.slice(0, 5);
+
+    grid.innerHTML = RecomendedItems.map(item => `
+        <div class="Recomended-card" onclick="accederArticulo('${item.url}', '${item.name}')">
+            <img src="${item.img}" alt="${item.name}">
+            <div class="card-info-bottom">                
+                <span class="sub">${item.sub}</span>
+                <span class="title">${item.name}</span>
+            </div>
+        </div>
+    `).join('');
+    
+}
 // Nueva función para manejar el acceso directo y guardar el historial
 function accederArticulo(url, nombre) {
     // Registramos la visita en el historial antes de navegar
@@ -126,4 +167,5 @@ function guardarEnHistorial(articulo) {
 window.onload = () => {
     updateCarousel();
     renderLatestArticles();
+    renderRecomendedArticles();
 };

@@ -6,6 +6,7 @@ const slides = [
     { img: "Imagenes/NetrisNowakSplashArt.png", name: "Netris Nowak", sub: "La rata de burbuju", url: "Personajes/NetrisNowakFicha.html" },
     { img: "Imagenes/TitiriteraSplashart.jpg", name: "La titiritera", sub: "La mascara y la madre", url: "Personajes/TitiriteraFicha.html" },
        { img: "Imagenes/DracoEtaminSplashArt.jpeg", name: "Draco Etamin", sub: "El Hijo de la Orden", url: "Personajes/DracoEtaminFicha.html" },
+       { img: "Imagenes/LaBestiaSplashArt.jpg", name: "La Bestia", sub: "La niña y su monstruo", url: "Personajes/LaBestiaFicha.html" },
     { img: "Imagenes/KristineSplashArt2.jpg", name: "Kristine Shipton", sub: "La Witcholet", url: "Personajes/KristineShiptonFicha.html" },
      { img: "Imagenes/LudisSplashArt.jpg", name: "Ludis Sola", sub: "El arquitecto del mañana", url: "Personajes/LudisSolaFicha.html" },
     { img: "Imagenes/ElizabethSplashArt.jpg", name: "Elizabeth ", sub: "La Brujita", url: "Personajes/ElizabethFicha.html" }
@@ -14,6 +15,7 @@ const slides = [
 const slidesRecomended = [
     { img: "Imagenes/CassandraSplashArt.jpeg", name: "Cassandra Quigley", sub: "La Bruja de las Arañas", url: "Personajes/CassandraQuigleyFicha.html"},
     { img: "Imagenes/AileenSplashArt.jpg", name: "Aileen Graham", sub: "La Reina de Assilim", url: "Personajes/AileenGrahamFicha.htmL" },
+    { img: "Imagenes/LaBestiaSplashArt.jpg", name: "La Bestia", sub: "La niña y su monstruo", url: "Personajes/LaBestiaFicha.html" },
     { img: "Imagenes/IvettaSawyerSplashArt.jpg", name: "Ivetta Sawyer", sub: "La Que Posee Demonios", url: "Personajes/IvettaSawyerFicha.html" },
     { img: "Imagenes/KristineSplashArt2.jpg", name: "Kristine Shipton", sub: "La Witcholet", url: "Personajes/KristineShiptonFicha.html" },
     { img: "Imagenes/LudisSplashArt.jpg", name: "Ludis Sola", sub: "El arquitecto del mañana", url: "Personajes/LudisSolaFicha.html" },

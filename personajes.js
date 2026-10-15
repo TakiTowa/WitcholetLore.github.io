@@ -7,6 +7,7 @@ const listaPersonajes = [
      { img: "Imagenes/TitiriteraSplashart.jpg", name: "La titiritera", sub: "La mascara y la madre", url: "Personajes/TitiriteraFicha.html" },
     { img: "Imagenes/LudisSplashArt.jpg", name: "Ludis Sola", sub: "El arquitecto del mañana", url: "Personajes/LudisSolaFicha.html" },
     { img: "Imagenes/DracoEtaminSplashArt.jpeg", name: "Draco Etamin", sub: "El Hijo de la Orden", url: "Personajes/DracoEtaminFicha.html" },
+    { img: "Imagenes/LaBestiaSplashArt.jpg", name: "La Bestia", sub: "La niña y su monstruo", url: "Personajes/LaBestiaFicha.html" },
     { img: "Imagenes/NetrisNowakSplashArt.png", name: "Netris Nowak", sub: "La rata de burbuju", url: "Personajes/NetrisNowakFicha.html" },
     { img: "Imagenes/ElizabethSplashArt.jpg", name: "Elizabeth", sub: "La Brujita", url: "Personajes/ElizabethFicha.html" }
 ];

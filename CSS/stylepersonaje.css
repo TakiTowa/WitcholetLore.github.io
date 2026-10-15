@@ -1,0 +1,308 @@
+/* ==================================================
+   ESTRUCTURA GENERAL DEL PERFIL (3 COLUMNAS)
+   ================================================== */
+.perfil-layout {
+    max-width: 1350px;
+    margin: 80px auto 40px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 260px 1fr 340px; /* Ancho columna izq | centro flexible | col der */
+    gap: 25px;
+    align-items: start;
+    box-sizing: border-box;
+}
+
+/* Base de paneles oscuros con bordes dorados / oscuros */
+.panel-box, .col-panel {
+    background: rgba(10, 10, 12, 0.92);
+    border: 1px solid #332d22;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+}
+
+/* ==================================================
+   COLUMNA IZQUIERDA: PERSONAJES RELACIONADOS
+   ================================================== */
+.col-relacionados {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.panel-titulo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.linea-dorada {
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 25px auto;
+}
+
+.relacionados-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.item-circular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.item-circular:hover {
+    transform: translateY(-4px);
+}
+
+.item-circular img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 12px rgba(200, 170, 110, 0.3);
+    transition: 0.3s ease;
+}
+
+.item-circular:hover img {
+    border-color: #fff;
+    box-shadow: 0 0 20px var(--gold);
+}
+
+.item-label {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: var(--text-white);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* ==================================================
+   COLUMNA CENTRAL: FRASE Y BIOGRAFÍA
+   ================================================== */
+.col-centro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Caja de la frase (con espacio para el avatar que sobresale) */
+.box-quote {
+    position: relative;
+    padding: 75px 35px 30px 35px;
+    text-align: center;
+    margin-top: 50px; /* Da margen para que el avatar no choque arriba */
+}
+
+/* Círculo verde del diagrama: avatar flotante centrado arriba */
+.avatar-flotante {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 15px rgba(200, 170, 110, 0.4);
+}
+
+.avatar-flotante img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frase-personaje {
+    font-family: 'Cinzel', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #e5ded2;
+    margin: 0 auto 15px auto;
+    max-width: 90%;
+}
+
+.autor-frase {
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Caja de Biografía */
+.box-biografia {
+    padding: 35px 35px 30px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bio-texto {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #c9c1b4;
+    margin-bottom: 25px;
+}
+
+/* Botón Link a Biografía */
+.btn-link-bio {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background: rgba(200, 170, 110, 0.05);
+    transition: all 0.3s ease;
+}
+
+.btn-link-bio:hover {
+    background: var(--gold);
+    color: #000;
+    box-shadow: 0 0 15px var(--gold);
+    transform: translateY(-2px);
+}
+
+/* ==================================================
+   COLUMNA DERECHA: FACCIÓN Y JUEGOS
+   ================================================== */
+.col-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Caja de Facción */
+.box-faccion {
+    overflow: hidden;
+}
+
+.faccion-img-wrapper {
+    width: 100%;
+    height: 240px;
+    background: #000;
+    overflow: hidden;
+}
+
+.faccion-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.box-faccion:hover .faccion-img-wrapper img {
+    transform: scale(1.04);
+}
+
+.faccion-datos {
+    padding: 18px 20px;
+    border-top: 1px solid var(--gold-dark);
+    background: #08080a;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    text-align: center;
+}
+
+.faccion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.faccion-tag {
+    font-size: 0.7rem;
+    color: #8c8273;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.faccion-nombre {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* Caja Juegos en los que aparece */
+.box-juegos {
+    padding: 20px;
+    text-align: center;
+}
+
+.juegos-titulo {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+}
+
+.juegos-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.juego-circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #443c2c;
+    overflow: hidden;
+    background: #0a0a0d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.juego-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.juego-circle:hover {
+    border-color: var(--gold);
+    transform: scale(1.08);
+    box-shadow: 0 0 12px var(--gold);
+}
+
+/* ==================================================
+   RESPONSIVIDAD (TABLETS Y MÓVILES)
+   ================================================== */
+@media (max-width: 1024px) {
+    .perfil-layout {
+        grid-template-columns: 1fr; /* Pasa a 1 columna apilada */
+    }
+
+    .col-relacionados .relacionados-lista {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

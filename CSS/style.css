@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'MiFuentePersonalizada';
-    src: url('Witcholet-Regular.ttf') format('truetype');
+    src: url('../Witcholet-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -73,7 +73,7 @@
 
 body {
     background-color: var(--bg-dark);
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Background.png');
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../Background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

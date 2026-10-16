@@ -2,7 +2,7 @@
 const listaPersonajes = [
     { img: "Imagenes/CassandraSplashArt.jpeg", name: "Ciudad Palacio", sub: "La ciudad de los humanos", url: "Personajes/CassandraQuigleyFicha.html" },
     { img: "Imagenes/AileenSplashArt.jpg", name: "Aquelarre", sub: "La capital de las brujas", url: "Personajes/AileenGrahamFicha.html" },
-    { img: "Imagenes/IvettaSplashArt.jpeg", name: "Bosque de los duendes", sub: "Siempre parte del bosque", url: "Personajes/IvettaSawyerFicha.html" },
+    { img: "Imagenes/IvettaSawyerSplashArt.jpg", name: "Bosque de los duendes", sub: "Siempre parte del bosque", url: "Personajes/IvettaSawyerFicha.html" },
     { img: "Imagenes/KristineSplashArt2.jpg", name: "Burbuju", sub: "El refugio de las brujas", url: "Personajes/KristineShiptonFicha.html" },
     { img: "Imagenes/TitiriteraSplashart.jpg", name: "Teatro de Hecate", sub: "El arquitecto del mañana", url: "Personajes/TitiriteraFicha.html" },
     { img: "Imagenes/ElizabethSplashArt.jpg", name: "Calabozo de Assilim", sub: "Por la seguridad de Assilim", url: "Personajes/ElizabethFicha.html" }

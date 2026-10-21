@@ -11,6 +11,7 @@ const listaPersonajes = [
         { img: "Imagenes/CirseEnebroSplashArt.jpg", name: "Cirse Enebro", sub: "La Hija de Helios", url: "Personajes/CirseEnebroFicha.html" },
     { img: "Imagenes/ElFonografoSplashArt.jpg", name: "El Fonografo", sub: "La plaga del baile", url: "Personajes/ElFonografoFicha.html" },    
     { img: "Imagenes/DagnijaClutterbuckSplashArt.jpg", name: "Dagnija Clutterbuck", sub: "La Promesa Literata", url: "Personajes/DagnijaClutterbuckFicha.html" },
+    { img: "Background.png", name: "Duende Caballero", sub: "El Caballero Verde", url: "Personajes/DuendeCaballeroFicha.html" },
     { img: "Imagenes/AriadnaBelroseSplashArt.jpg", name: "Ariadna Belrose", sub: "La Bruja Mas Humana", url: "Personajes/AriadnaBelroseFicha.html" },
     { img: "Imagenes/NetrisNowakSplashArt.png", name: "Netris Nowak", sub: "La rata de burbuju", url: "Personajes/NetrisNowakFicha.html" },
     { img: "Imagenes/ElizabethSplashArt.jpg", name: "Elizabeth", sub: "La Brujita", url: "Personajes/ElizabethFicha.html" }
